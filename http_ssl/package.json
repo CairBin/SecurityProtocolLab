@@ -1,0 +1,15 @@
+{
+  "name": "http_ssl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cairbin",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.19.2"
+  },
+  "type":"module",
+  "scripts":{
+    "start":"node ./src/index.js"
+  }
+}
