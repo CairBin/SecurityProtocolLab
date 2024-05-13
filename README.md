@@ -9,4 +9,4 @@
 
 - `sm3_algo` SM3算法的纯C语言实现 [README](sm3_algo/README.md)
 - `digital_envelope` nodejs实现数字信封 [README](digital_envelope/README.md)
-- `http_ssl` openssl自签证书并基于nodejs express框架实现http与https服务
+- `http_ssl` openssl自签证书并基于nodejs express框架实现http与https服务 [README](http_ssl/README.md)
