@@ -17,16 +17,17 @@ const httpsServer = https.createServer({
     key:fs.readFileSync('keys/private.pem'),
     cert:fs.readFileSync('keys/file.crt')
 },app)
-const httpServer = http.createServer({});
+const httpServer = http.createServer({},app);
 
 //static path
 app.use(express.static(
     path.join(__dirname, config.server.static)));
+logger.info(`static file path '${path.join(__dirname, config.server.static)}'`);
 
 app.use('/',defaultRoute);
 // 404 page
 app.use('*',(req,res)=>{
-    res.redirect('html/404.html')
+    res.redirect('./html/404.html')
 })
 
 

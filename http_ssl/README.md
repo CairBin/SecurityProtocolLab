@@ -13,7 +13,7 @@ yarn install
 ```js
 {
     server:{
-        static: 'asset',        // 静态资源目录
+        static: '../asset',      // 静态资源目录
 
         // http配置
         http:{
@@ -47,3 +47,8 @@ yarn run start
 https服务请访问`https://localhost:8849`，但现代浏览器基本都会提示不安全，因为我们使用的证书是自签的。
 
 （访问地址根据配置文件的`host`和`port`字段自行修改）
+
+
+### 注意
+
+本项目为了方便抓包分析，访问页面的时候返回的状态码为`500`而非`200`

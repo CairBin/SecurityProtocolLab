@@ -1,6 +1,6 @@
 export default {
     server:{
-        static: 'asset',
+        static: '../asset',
         http:{
             host: "localhost",
             port: 8848

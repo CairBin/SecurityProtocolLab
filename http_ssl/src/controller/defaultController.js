@@ -1,7 +1,7 @@
 
 
 const defaultFunc = (req, res, next)=>{
-    res.send('Hello World!');
+    res.status(500).send('Hello World!')
 }
 
 export default{
